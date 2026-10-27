@@ -1,0 +1,34 @@
+Extract invoice data for an accounting system. Every value must be exact, because it is saved without a human checking it.
+
+Follow these steps:
+1. Read the invoice below.
+2. Find these four fields:
+   - invoice_number: the invoice's ID
+   - date: the date the invoice was issued
+   - vendor: the company that sent the invoice and is being paid
+   - total: the amount to be paid
+3. Convert the date and total using the rules below.
+4. Return the result.
+
+Rules:
+- date: always write it as DD-MM-YYYY, whatever format the invoice uses.
+  If a date is ambiguous, read it as day first.
+  Examples:
+  - "2025/03/09"   -> "09-03-2025"
+  - "July 4, 2021" -> "04-07-2021"
+  - "14-MAR-2023"  -> "14-03-2023"
+  - "03-04-2022"   -> "03-04-2022"  (3 April, day first)
+- total: a plain number only. No currency (Rs., PKR, $, USD, EUR), no commas, not in quotes.
+  Convert lakh, k and words into the full number.
+  Examples:
+  - "Rs. 3.5 lakh"          -> 350000
+  - "8k USD"                -> 8000
+  - "Seventy Five Thousand" -> 75000
+  - "Rs. 2,40,000"          -> 240000
+  - "$1,250.75"             -> 1250.75
+- If a field is not in the invoice, use null.
+
+Output: return only a JSON object with the keys invoice_number, date, vendor and total. No explanation, no code fences.
+
+Invoice:
+{invoice_text}

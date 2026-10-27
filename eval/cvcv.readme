@@ -1,0 +1,26 @@
+Rules for the dataset:
+1. Create exactly 10 items. Each invoice text is 1 to 3 lines.
+2. Every invoice must have a different date and a different total.
+3. Use a different date format across invoices, for example: "15/03/2023", "2024/06/15", "March 10, 2024", "29-FEB-2024", "3rd January 2027".
+4. Ambiguous dates like 01-07-2025 are day first (1 July 2025).
+5. Include each of these cases in exactly ONE invoice:
+   - total written in words, e.g. "One Lakh Twenty Thousand Rupees"
+   - total written in lakh, e.g. "Rs. 2.5 lakh"
+   - total written with k, e.g. "2k USD"
+   - total in Pakistani comma format, e.g. "Rs. 1,32,000"
+   - no invoice number
+   - no vendor name
+   - an ambiguous date like 05-01-2024
+6. Use a mix of currencies: Rs., PKR, $, USD, EUR.
+7. When a field is missing, just leave it out of the text. Never write "no invoice number provided" or similar.
+8. Do not reuse the example below.
+
+Return only a JSON array, with no explanation and no code fences.
+
+
+
+
+- invoice_number: string, or null if the text has no invoice number. Do not include the "#" symbol.
+- date: string in DD-MM-YYYY format, or null if missing
+- vendor: string (the company that sent the invoice), or null if missing
+- total: number with no commas or currency symbol, or null if missing

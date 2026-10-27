@@ -1,0 +1,13 @@
+Extract the invoice number, date, vendor and total from this invoice.
+Return JSON with these keys:
+
+1. date: always write it as DD-MM-YYYY, whatever format the invoice uses.
+   If a date is ambiguous, read it as day first.
+
+2. total: a plain number only. No currency (Rs., PKR, $, USD, EUR), no commas, not in quotes.
+   Convert lakh, k and words into the full number.
+
+3. If a field is not in the invoice, use null.
+
+Invoice:
+{invoice_text}
