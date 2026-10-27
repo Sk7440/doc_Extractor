@@ -1,0 +1,5 @@
+Extract the invoice number, date, vendor and total from this invoice.
+Return JSON with these keys: invoice_number, date, vendor, total.
+
+Invoice:
+{invoice_text}

@@ -1,0 +1,162 @@
+[
+  {
+    "input": "Invoice #A-992 from TechCorp. 12/05/2023. Total: $450.50",
+    "expected": {
+      "invoice_number": "A-992",
+      "date": "12-05-2023",
+      "vendor": "TechCorp",
+      "total": 450.5
+    },
+    "actual": {
+      "invoice_number": "A-992",
+      "date": "12-05-2023",
+      "vendor": "TechCorp",
+      "total": 450.5
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"A-992\",\n  \"date\": \"12-05-2023\",\n  \"vendor\": \"TechCorp\",\n  \"total\": 450.50\n}\n```"
+  },
+  {
+    "input": "Bill 5501, 2024/11/20, Global Logistics. Total: Two Thousand Five Hundred Dollars",
+    "expected": {
+      "invoice_number": "5501",
+      "date": "20-11-2024",
+      "vendor": "Global Logistics",
+      "total": 2500
+    },
+    "actual": {
+      "invoice_number": "5501",
+      "date": "20-11-2024",
+      "vendor": "Global Logistics",
+      "total": 2500
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"5501\",\n  \"date\": \"20-11-2024\",\n  \"vendor\": \"Global Logistics\",\n  \"total\": 2500\n}\n```"
+  },
+  {
+    "input": "Invoice #B-102, March 15, 2022, Solar Systems. Total: Rs. 1.2 lakh",
+    "expected": {
+      "invoice_number": "B-102",
+      "date": "15-03-2022",
+      "vendor": "Solar Systems",
+      "total": 120000
+    },
+    "actual": {
+      "invoice_number": "B-102",
+      "date": "15-03-2022",
+      "vendor": "Solar Systems",
+      "total": 120000
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"B-102\",\n  \"date\": \"15-03-2022\",\n  \"vendor\": \"Solar Systems\",\n  \"total\": 120000\n}\n```"
+  },
+  {
+    "input": "INV-883, 29-FEB-2024, Cloud Services. Total: 5k USD",
+    "expected": {
+      "invoice_number": "INV-883",
+      "date": "29-02-2024",
+      "vendor": "Cloud Services",
+      "total": 5000
+    },
+    "actual": {
+      "invoice_number": "INV-883",
+      "date": "29-02-2024",
+      "vendor": "Cloud Services",
+      "total": 5000
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"INV-883\",\n  \"date\": \"29-02-2024\",\n  \"vendor\": \"Cloud Services\",\n  \"total\": 5000\n}\n```"
+  },
+  {
+    "input": "Invoice #C-441, 10-01-2025, FastTrack. Total: Rs. 1,45,000",
+    "expected": {
+      "invoice_number": "C-441",
+      "date": "10-01-2025",
+      "vendor": "FastTrack",
+      "total": 145000
+    },
+    "actual": {
+      "invoice_number": "C-441",
+      "date": "10-01-2025",
+      "vendor": "FastTrack",
+      "total": 145000
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"C-441\",\n  \"date\": \"10-01-2025\",\n  \"vendor\": \"FastTrack\",\n  \"total\": 145000\n}\n```"
+  },
+  {
+    "input": "Dated 3rd January 2027, Apex Ltd. Total: EUR 890",
+    "expected": {
+      "invoice_number": null,
+      "date": "03-01-2027",
+      "vendor": "Apex Ltd",
+      "total": 890
+    },
+    "actual": {
+      "invoice_number": null,
+      "date": "03-01-2027",
+      "vendor": "Apex Ltd.",
+      "total": 890
+    },
+    "raw": "```json\n{\n  \"invoice_number\": null,\n  \"date\": \"03-01-2027\",\n  \"vendor\": \"Apex Ltd.\",\n  \"total\": 890\n}\n```"
+  },
+  {
+    "input": "Invoice #D-772, 18-08-2021. Total: PKR 12300",
+    "expected": {
+      "invoice_number": "D-772",
+      "date": "18-08-2021",
+      "vendor": null,
+      "total": 12300
+    },
+    "actual": {
+      "invoice_number": "D-772",
+      "date": "18-08-2021",
+      "vendor": null,
+      "total": 12300
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"D-772\",\n  \"date\": \"18-08-2021\",\n  \"vendor\": null,\n  \"total\": 12300\n}\n```"
+  },
+  {
+    "input": "Invoice #E-119, 05-01-2024, Zenith Co. Total: $77.25",
+    "expected": {
+      "invoice_number": "E-119",
+      "date": "05-01-2024",
+      "vendor": "Zenith Co",
+      "total": 77.25
+    },
+    "actual": {
+      "invoice_number": "E-119",
+      "date": "05-01-2024",
+      "vendor": "Zenith Co.",
+      "total": 77.25
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"E-119\",\n  \"date\": \"05-01-2024\",\n  \"vendor\": \"Zenith Co.\",\n  \"total\": 77.25\n}\n```"
+  },
+  {
+    "input": "INV-009, 2023/07/14, Omega Inc. Total: EUR 1100.10",
+    "expected": {
+      "invoice_number": "INV-009",
+      "date": "14-07-2023",
+      "vendor": "Omega Inc",
+      "total": 1100.1
+    },
+    "actual": {
+      "invoice_number": "INV-009",
+      "date": "14-07-2023",
+      "vendor": "Omega Inc.",
+      "total": 1100.1
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"INV-009\",\n  \"date\": \"14-07-2023\",\n  \"vendor\": \"Omega Inc.\",\n  \"total\": 1100.10\n}\n```"
+  },
+  {
+    "input": "Invoice #F-663, 22 Nov 2020, Prime Goods. Total: PKR 34000",
+    "expected": {
+      "invoice_number": "F-663",
+      "date": "22-11-2020",
+      "vendor": "Prime Goods",
+      "total": 34000
+    },
+    "actual": {
+      "invoice_number": "F-663",
+      "date": "22-11-2020",
+      "vendor": "Prime Goods",
+      "total": 34000
+    },
+    "raw": "```json\n{\n  \"invoice_number\": \"F-663\",\n  \"date\": \"22-11-2020\",\n  \"vendor\": \"Prime Goods\",\n  \"total\": 34000\n}\n```"
+  }
+]
