@@ -1,92 +1,92 @@
 [
-  {
-    "input": "Invoice #A-992 from TechCorp. 12/05/2023. Total: $450.50",
-    "expected": {
-      "invoice_number": "A-992",
-      "date": "12-05-2023",
-      "vendor": "TechCorp",
-      "total": 450.5
+    {
+        "input": "Invoice #A-992 from TechCorp. 12/05/2023. Total: $450.50",
+        "expected": {
+            "invoice_number": "A-992",
+            "date": "12-05-2023",
+            "vendor": "TechCorp",
+            "total": 450.5
+        }
+    },
+    {
+        "input": "Bill 5501, 2024/11/20, Global Logistics. Total: Two Thousand Five Hundred Dollars",
+        "expected": {
+            "invoice_number": "5501",
+            "date": "20-11-2024",
+            "vendor": "Global Logistics",
+            "total": 2500
+        }
+    },
+    {
+        "input": "Invoice #B-102, March 15, 2022, Solar Systems. Total: Rs. 1.2 lakh",
+        "expected": {
+            "invoice_number": "B-102",
+            "date": "15-03-2022",
+            "vendor": "Solar Systems",
+            "total": 120000
+        }
+    },
+    {
+        "input": "INV-883, 29-FEB-2024, Cloud Services. Total: 5k USD",
+        "expected": {
+            "invoice_number": "INV-883",
+            "date": "29-02-2024",
+            "vendor": "Cloud Services",
+            "total": 5000
+        }
+    },
+    {
+        "input": "Invoice #C-441, 10-01-2025, FastTrack. Total: Rs. 1,45,000",
+        "expected": {
+            "invoice_number": "C-441",
+            "date": "10-01-2025",
+            "vendor": "FastTrack",
+            "total": 145000
+        }
+    },
+    {
+        "input": "Dated 3rd January 2027, Apex Ltd. Total: EUR 890",
+        "expected": {
+            "invoice_number": null,
+            "date": "03-01-2027",
+            "vendor": "Apex Ltd",
+            "total": 890
+        }
+    },
+    {
+        "input": "Invoice #D-772, 18-08-2021. Total: PKR 12300",
+        "expected": {
+            "invoice_number": "D-772",
+            "date": "18-08-2021",
+            "vendor": null,
+            "total": 12300
+        }
+    },
+    {
+        "input": "Invoice #E-119, 05-01-2024, Zenith Co. Total: $77.25",
+        "expected": {
+            "invoice_number": "E-119",
+            "date": "05-01-2024",
+            "vendor": "Zenith Co",
+            "total": 77.25
+        }
+    },
+    {
+        "input": "INV-009, 2023/07/14, Omega Inc. Total: EUR 1100.10",
+        "expected": {
+            "invoice_number": "INV-009",
+            "date": "14-07-2023",
+            "vendor": "Omega Inc",
+            "total": 1100.1
+        }
+    },
+    {
+        "input": "Invoice #F-663, 22 Nov 2020, Prime Goods. Total: PKR 34000",
+        "expected": {
+            "invoice_number": "F-663",
+            "date": "22-11-2020",
+            "vendor": "Prime Goods",
+            "total": 34000
+        }
     }
-  },
-  {
-    "input": "Bill 5501, 2024/11/20, Global Logistics. Total: Two Thousand Five Hundred Dollars",
-    "expected": {
-      "invoice_number": "5501",
-      "date": "20-11-2024",
-      "vendor": "Global Logistics",
-      "total": 2500
-    }
-  },
-  {
-    "input": "Invoice #B-102, March 15, 2022, Solar Systems. Total: Rs. 1.2 lakh",
-    "expected": {
-      "invoice_number": "B-102",
-      "date": "15-03-2022",
-      "vendor": "Solar Systems",
-      "total": 120000
-    }
-  },
-  {
-    "input": "INV-883, 29-FEB-2024, Cloud Services. Total: 5k USD",
-    "expected": {
-      "invoice_number": "INV-883",
-      "date": "29-02-2024",
-      "vendor": "Cloud Services",
-      "total": 5000
-    }
-  },
-  {
-    "input": "Invoice #C-441, 10-01-2025, FastTrack. Total: Rs. 1,45,000",
-    "expected": {
-      "invoice_number": "C-441",
-      "date": "10-01-2025",
-      "vendor": "FastTrack",
-      "total": 145000
-    }
-  },
-  {
-    "input": "Dated 3rd January 2027, Apex Ltd. Total: EUR 890",
-    "expected": {
-      "invoice_number": null,
-      "date": "03-01-2027",
-      "vendor": "Apex Ltd",
-      "total": 890
-    }
-  },
-  {
-    "input": "Invoice #D-772, 18-08-2021. Total: PKR 12300",
-    "expected": {
-      "invoice_number": "D-772",
-      "date": "18-08-2021",
-      "vendor": null,
-      "total": 12300
-    }
-  },
-  {
-    "input": "Invoice #E-119, 05-01-2024, Zenith Co. Total: $77.25",
-    "expected": {
-      "invoice_number": "E-119",
-      "date": "05-01-2024",
-      "vendor": "Zenith Co",
-      "total": 77.25
-    }
-  },
-  {
-    "input": "INV-009, 2023/07/14, Omega Inc. Total: EUR 1100.10",
-    "expected": {
-      "invoice_number": "INV-009",
-      "date": "14-07-2023",
-      "vendor": "Omega Inc",
-      "total": 1100.1
-    }
-  },
-  {
-    "input": "Invoice #F-663, 22 Nov 2020, Prime Goods. Total: PKR 34000",
-    "expected": {
-      "invoice_number": "F-663",
-      "date": "22-11-2020",
-      "vendor": "Prime Goods",
-      "total": 34000
-    }
-  }
 ]
